@@ -1,0 +1,106 @@
+body {
+	background: linear-gradient(30deg, #db3b0a, #b93b9a, #18bbbb, #9846db);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0vh;
+    padding: 1vh;
+}
+
+#Name {
+    color:white;
+    text-align: center;
+    font-size: 10vh;
+    font-family: Ganymede;
+}
+
+#Description {
+    color: white;
+    text-align: center;
+    font-size: 2.5vh;
+    font-style: italic;
+    font-family: Bricemont;
+    margin-top: -8vh;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    position: relative;
+    width: 50%;
+}
+
+#Megumin {
+    float: right;
+    width: 36vh;
+    height: 36vh;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    margin-top: 4vh;
+    margin-right: 3vh;
+}
+
+.links {
+    float: left;
+    margin-top: 4vh;
+    margin-left: 3vh;
+}
+
+.icon {
+    height: 12vh;
+    animation: decrsize;
+    animation-duration: 0.25s;
+    transform: none;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.icon:hover {
+    animation: incrsize;
+    animation-duration: 0.25s;
+    transform: scale(1.2);
+    width: auto;
+    filter: none;
+}
+
+@font-face {
+    font-family: Ganymede;
+    src: url(fonts/ganymede.ttf);
+}
+
+@font-face {
+    font-family: Bricemont;
+    src: url(fonts/Bricemont.ttf);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes incrsize {
+    from {transform:scale(1.0);}
+    to {transform: scale(1.2);}
+}
+
+@keyframes decrsize {
+    from {transform: scale(1.2);}
+    to {transform:scale(1.0);}
+}
+
