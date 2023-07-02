@@ -105,6 +105,7 @@ ul {
     width:min-content;
     transform: none;
     transition: transform 0.25s ease, gap 0.25s ease;
+    cursor: pointer;
 }
 .projsel:hover {
     color:#8de0c5;

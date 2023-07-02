@@ -1,0 +1,100 @@
+html {
+    overflow: auto;
+}
+
+body {
+	background: linear-gradient(30deg, #db3b0a, #b93b9a, #078b8b, #9846db);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.home {
+    cursor:pointer;
+    position: absolute;
+    float:left;
+    width: 7vh;
+    height:auto;
+    filter: brightness(0) invert(1);
+    transition: transform 0.25s ease;
+}
+.home:hover {
+    transition: transform 0.25s ease;
+    transform:scale(1.15);
+}
+
+.flex {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.name {
+    font-family: VCR;
+    font-size: 7vh;
+    text-shadow: 0.5vh 0.5vh 1vh black;
+    color: #b34438;
+    transition: transform 0.25s ease
+}
+.name:hover {
+    transition: transform 0.25s ease;
+    transform:scale(1.05)
+}
+
+.description {
+    margin-top: -3vh;
+    margin-bottom: 4vh;
+    font-family: Roboto;
+    color:black;
+    font-size: 3vh;
+    line-height: 3.5vh;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.screenshot {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    filter: drop-shadow(1vh 1vh 1vh)
+}
+
+.line {
+    height: 0.2vh;
+    background-color: black;
+    margin-top:4vh;
+    width:800px;
+    border: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@font-face {
+    font-family: VCR;
+    src: url(fonts/vcr.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/roboto.ttf);
+}
