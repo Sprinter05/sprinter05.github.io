@@ -157,12 +157,12 @@ ul {
 
 @font-face {
     font-family: Bricemont;
-    src: url(fonts/bricemont.ttf);
+    src: url(fonts/Bricemont.ttf);
 }
 
 @font-face {
     font-family: Atiba;
-    src: url(fonts/atiba.ttf);
+    src: url(fonts/Atiba.ttf);
 }
 
 @keyframes gradient {
