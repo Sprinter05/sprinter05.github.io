@@ -5,34 +5,71 @@ body {
 	height: 100vh;
 }
 
+ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0vh;
+    padding: 1vh;
+}
+
 #Name {
     color:white;
     text-align: center;
-    font-size: 80px;
+    font-size: 10vh;
     font-family: Ganymede;
 }
 
 #Description {
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 2.5vh;
     font-style: italic;
     font-family: Bricemont;
-    margin-top: -65px;
+    margin-top: -8vh;
 }
 
-.circleimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.row {
+    display: flex;
+}
+  
+.column {
+    position: relative;
     width: 50%;
-    width: 280px;
-    height: 280px;
+}
+
+#Megumin {
+    float: right;
+    width: 36vh;
+    height: 36vh;
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
     border-bottom-right-radius: 50% 50%;
     border-bottom-left-radius: 50% 50%;
-    margin-top: 30px;
+    margin-top: 4vh;
+    margin-right: 3vh;
+}
+
+.links {
+    float: left;
+    margin-top: 4vh;
+    margin-left: 3vh;
+}
+
+.icon {
+    height: 12vh;
+    animation: decrsize;
+    animation-duration: 0.25s;
+    transform: none;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.icon:hover {
+    animation: incrsize;
+    animation-duration: 0.25s;
+    transform: scale(1.2);
+    width: auto;
+    filter: none;
 }
 
 @font-face {
@@ -56,3 +93,14 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+@keyframes incrsize {
+    from {transform:scale(1.0);}
+    to {transform: scale(1.2);}
+}
+
+@keyframes decrsize {
+    from {transform: scale(1.2);}
+    to {transform:scale(1.0);}
+}
+
