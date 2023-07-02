@@ -71,14 +71,6 @@ a, a:visited, a:hover, a:active {
     filter: drop-shadow(1vh 1vh 1vh)
 }
 
-.line {
-    height: 0.2vh;
-    background-color: black;
-    margin-top:4vh;
-    width:800px;
-    border: none;
-}
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
