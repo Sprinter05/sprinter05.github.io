@@ -76,7 +76,7 @@ ul {
 }
 
 .contsel {
-    margin-top: 4vh;
+    margin-top: 5vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -157,12 +157,12 @@ ul {
 
 @font-face {
     font-family: Bricemont;
-    src: url(fonts/Bricemont.ttf);
+    src: url(fonts/bricemont.ttf);
 }
 
 @font-face {
     font-family: Atiba;
-    src: url(fonts/Atiba.ttf);
+    src: url(fonts/atiba.ttf);
 }
 
 @keyframes gradient {
