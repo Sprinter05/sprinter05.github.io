@@ -7,7 +7,6 @@ body {
 
 ul {
     list-style: none;
-    display: inline-block;
     margin: 0vh;
     padding: 1vh;
 }
@@ -28,16 +27,15 @@ ul {
     margin-top: -8vh;
 }
 
-.row {
+.rowheader {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
   
-.column {
-    position: relative;
-    width: 50%;
-}
-
-#Megumin {
+.megumin {
     float: right;
     width: 36vh;
     height: 36vh;
@@ -49,8 +47,12 @@ ul {
     margin-right: 3vh;
 }
 
+.iconlist {
+    display: flex;
+    flex-direction: row;
+}
+
 .links {
-    float: left;
     margin-top: 4vh;
     margin-left: 3vh;
 }
@@ -70,6 +72,18 @@ ul {
     transform: scale(1.2);
     width: auto;
     filter: none;
+}
+
+@media screen and (max-width: 600px) {
+    .rowheader {
+        flex-direction: column;
+    }
+    .megumin {
+        margin-right:0vh;
+    }
+    .links {
+        margin-left: 0vh;
+    }
 }
 
 @font-face {
