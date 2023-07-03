@@ -38,14 +38,26 @@ a, a:visited, a:hover, a:active {
     align-items: center;
 }
 
-.name {
+#name1 {
     font-family: VCR;
     font-size: 7vh;
     text-shadow: 0.5vh 0.5vh 1vh black;
     color: #b34438;
     transition: transform 0.25s ease
 }
-.name:hover {
+#name1:hover {
+    transition: transform 0.25s ease;
+    transform:scale(1.05)
+}
+
+#name2 {
+    font-family: Strasua;
+    font-size: 6.5vh;
+    text-shadow: 0.5vh 0.5vh 1vh black;
+    color: #dacece;
+    transition: transform 0.25s ease
+}
+#name2:hover {
     transition: transform 0.25s ease;
     transform:scale(1.05)
 }
@@ -71,6 +83,12 @@ a, a:visited, a:hover, a:active {
     filter: drop-shadow(1vh 1vh 1vh)
 }
 
+.line {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -91,4 +109,9 @@ a, a:visited, a:hover, a:active {
 @font-face {
     font-family: Exo;
     src: url(fonts/Exo.ttf);
+}
+
+@font-face {
+    font-family: Strasua;
+    src: url(fonts/strasua.otf);
 }
