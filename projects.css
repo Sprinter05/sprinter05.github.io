@@ -1,4 +1,7 @@
+/* Google Font import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* DEFAULTS */
 
 html {
     overflow: auto;
@@ -15,67 +18,73 @@ a, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
+/* IDs */
+
+#ytdlphandler {
+    font-family: VCR;
+    color: #B34438;
+}
+
+#spacehell {
+    font-family: Strasua;
+    color: #DACECE;
+}
+
+/* CLASSES */
+
+/* Animates each title for the projects */
+.projtitle {
+    font-size: 7vh;
+    text-shadow: 0.5vh 0.5vh 1vh black;
+    transition: transform 0.25s ease
+}
+.projtitle:hover {
+    transition: transform 0.25s ease;
+    transform: scale(1.05)
+}
+
+/* Go to the main page icon */
 .home {
-    cursor:pointer;
+    cursor: pointer;
     position: absolute;
-    float:left;
+    float: left;
     width: 7vh;
-    height:auto;
+    height: auto;
     filter: brightness(0) invert(1);
     transition: transform 0.25s ease;
 }
 .home:hover {
     transition: transform 0.25s ease;
-    transform:scale(1.15);
+    transform: scale(1.15);
 }
 
-.flex {
+/* Box containing each project */
+.projbox {
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
 
-#name1 {
-    font-family: VCR;
-    font-size: 7vh;
-    text-shadow: 0.5vh 0.5vh 1vh black;
-    color: #b34438;
-    transition: transform 0.25s ease
-}
-#name1:hover {
-    transition: transform 0.25s ease;
-    transform:scale(1.05)
-}
-
-#name2 {
-    font-family: Strasua;
-    font-size: 6.5vh;
-    text-shadow: 0.5vh 0.5vh 1vh black;
-    color: #dacece;
-    transition: transform 0.25s ease
-}
-#name2:hover {
-    transition: transform 0.25s ease;
-    transform:scale(1.05)
-}
-
+/* Description for each project */
 .description {
     margin-top: -3vh;
     margin-bottom: 4vh;
     font-family: Exo;
-    color:black;
+    color: black;
     font-size: 3vh;
     line-height: 3.5vh;
 }
 
+/* Screenshot container for each project */
 .imgbox {
     display: grid;
     height: 100%;
 }
 
+/* Actual screenshot */
 .screenshot {
     max-width: 100%;
     max-height: 100vh;
@@ -83,12 +92,14 @@ a, a:visited, a:hover, a:active {
     filter: drop-shadow(1vh 1vh 1vh)
 }
 
+/* Separator line */
 .line {
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
 }
 
+/* Background Gradient */
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -101,17 +112,17 @@ a, a:visited, a:hover, a:active {
 	}
 }
 
+/* FONT IMPORTS */
+
 @font-face {
     font-family: VCR;
-    src: url(fonts/vcr.ttf);
+    src: url(fonts/VCR.ttf);
 }
-
 @font-face {
     font-family: Exo;
     src: url(fonts/Exo.ttf);
 }
-
 @font-face {
     font-family: Strasua;
-    src: url(fonts/strasua.otf);
+    src: url(fonts/Strasua.otf);
 }
