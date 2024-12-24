@@ -1,3 +1,5 @@
+/* DEFAULTS */
+
 html {
     overflow: auto;
 }
@@ -13,13 +15,17 @@ ul {
     margin: 0vh;
 }
 
+/* IDs */
+
+/* Username */
 #Name {
-    color:white;
+    color: white;
     text-align: center;
     font-size: 10vh;
     font-family: Ganymede;
 }
 
+/* Description */
 #Description {
     color: white;
     text-align: center;
@@ -29,6 +35,9 @@ ul {
     margin-top: -8vh;
 }
 
+/* CLASSES */
+
+/* Containes profile picture and social media links */
 .rowheader {
     display: flex;
     flex-direction: row;
@@ -38,6 +47,7 @@ ul {
     margin-top: 4vh;
 }
   
+/* Rounds the profile picture */
 .circleimg {
     float: right;
     width: 36vh;
@@ -49,16 +59,19 @@ ul {
     margin-right: 3vh;
 }
 
+/* Contains all the icons for social media links */
 .iconlist {
     display: flex;
     flex-direction: row;
     margin-left: 3vh;
 }
 
+/* List for the links */
 .links {
     padding: 0vh;
 }
 
+/* Icon image filtered to be white unless hovered */
 .icon {
     height: 12vh;
     transform: none;
@@ -66,7 +79,6 @@ ul {
     width: auto;
     filter: brightness(0) invert(1);
 }
-
 .icon:hover {
     transform: scale(1.2);
     transition: transform 0.25s ease;
@@ -74,17 +86,19 @@ ul {
     filter: none;
 }
 
+/* Contains the name list for miscellaneous stuff */
 .contsel {
     margin-top: 5vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:2vh;
+    gap: 2vh;
 }
 
+/* Each of the individual containers for the text */
 .select {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -92,58 +106,58 @@ ul {
     font-family: Atiba;
     font-size: 5vh;
     color: white;
-    gap:3vh;
+    gap: 3vh;
 }
 
+/* Remove default margin */
 .nomargin {
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
 
+/* Font for the arrows which looks better */
 .arrowfont {
     font-family: Ganymede;
 }
 
-.projsel {
-    width:min-content;
+/* Animation that contracts/expands the arrows and text */
+.textsel {
+    width: min-content;
     transform: none;
     transition: transform 0.25s ease, gap 0.25s ease;
     cursor: pointer;
 }
-.projsel:hover {
-    color:#8de0c5;
-    gap:1vh;
-    transform:scale(0.95);
+.textsel:hover {
+    gap: 1vh;
+    transform: scale(0.95);
     transition: gap 0.25s ease;
 }
 
-.backlogsel {
-    width:min-content;
-    transform: none;
-    transition: transform 0.25s ease, gap 0.25s ease;
-    cursor: pointer;
-}
-.backlogsel:hover {
-    color:#BADEFC;
-    gap:1vh;
-    transform:scale(0.95);
-    transition: gap 0.25s ease;
+/* Color for "Backlog" */
+.backlog:hover {
+    color: #BADEFC;
 }
 
+/* Color for "Projects" */
+.project:hover {
+    color: #8DE0C5;
+}
+
+/* Changes the orientations when its a mobile sized view */
 @media screen and (max-width: 712px) {
     .rowheader {
         flex-direction: column;
     }
     .circleimg {
-        margin-right:0vh;
+        margin-right: 0vh;
     }
     .links {
         padding: 0vh;
         margin-left: 0vh;
         margin-top: 0vh;
-        width:100%;
-        display:flex;
-        flex-direction:row;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
@@ -154,21 +168,7 @@ ul {
     }
 }
 
-@font-face {
-    font-family: Ganymede;
-    src: url(fonts/ganymede.ttf);
-}
-
-@font-face {
-    font-family: Bricemont;
-    src: url(fonts/Bricemont.ttf);
-}
-
-@font-face {
-    font-family: Atiba;
-    src: url(fonts/Atiba.ttf);
-}
-
+/* Background Gradient */
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -179,4 +179,19 @@ ul {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+/* FONT IMPORTS */
+
+@font-face {
+    font-family: Ganymede;
+    src: url(fonts/Ganymede.ttf);
+}
+@font-face {
+    font-family: Bricemont;
+    src: url(fonts/Bricemont.ttf);
+}
+@font-face {
+    font-family: Atiba;
+    src: url(fonts/Atiba.ttf);
 }
