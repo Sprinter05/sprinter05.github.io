@@ -30,6 +30,11 @@ a, a:visited, a:hover, a:active {
     color: #DACECE;
 }
 
+#gochat {
+    font-family: Moliga;
+    color: #00AEDB;
+}
+
 /* CLASSES */
 
 /* Animates each title for the projects */
@@ -114,6 +119,10 @@ a, a:visited, a:hover, a:active {
 
 /* FONT IMPORTS */
 
+@font-face {
+    font-family: Moliga;
+    src: url(fonts/Moliga.otf);
+}
 @font-face {
     font-family: VCR;
     src: url(fonts/VCR.ttf);
