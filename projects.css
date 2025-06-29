@@ -1,5 +1,6 @@
 /* Google Font import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Huninn&display=swap');
 
 /* DEFAULTS */
 
@@ -31,7 +32,7 @@ a, a:visited, a:hover, a:active {
 }
 
 #gochat {
-    font-family: Moliga;
+    font-family: Huninn;
     color: #00AEDB;
 }
 
