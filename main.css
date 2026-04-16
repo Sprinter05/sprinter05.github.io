@@ -133,9 +133,9 @@ ul {
     transition: gap 0.25s ease;
 }
 
-/* Color for "Backlog" */
-.backlog:hover {
-    color: #BADEFC;
+/* Color for "Source Code" */
+.source:hover {
+    color: #a8ceed;
 }
 
 /* Color for "Projects" */
